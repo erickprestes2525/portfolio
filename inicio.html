@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./atividade.css">
+    <title>Document</title>
+</head>
+<body>
+  <img src="forms.jpeg" alt="minha Imagem" class="imagem">
+   <header>
+       <nav class="menu">
+         <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a target="_blank" href="./sobre.html">Sobre</a></li>
+          <li><a target="_blank" href="./hobbies.html#Livro">Hobbies</a></li>
+          <li><a target="_blank" href="./sobre.html#Filme" >Filmes e séries</a></li>
+          <li><a target="_blank" href="./inicio.html">Formulário</a></li>
+        </ul>
+       </nav>
+   </header>
+ <main>
+  <div claa="imagem-fundo">
+  <section class="formulario-container">
+    <h2 class="formulario-titulo">Deixe seu Feedback</h2>
+    <form action="#" method="POST">
+        <div class="formulario-grupo">
+            <label for="nome">1. Qual é o seu nome completo?</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="formulario-grupo">
+            <label for="email">2. Qual é o seu e-mail?</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+                <div class="formulario-grupo">
+            <label for="assunto">3. Qual é o assunto do seu contato?</label>
+            <select id="assunto" name="assunto" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="elogio">Elogio</option>
+            </select>
+        </div>
+        <div class="formulario-grupo">
+            <label for="mensagem">Deixe sua mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+        </div>
+        <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+    </form>
+</section>
+</div>
+ </main>
+    <footer>
+        <span>Erick Alexandre Prestes rocha</span>
+        <span>E-mail: erickprestes.rocha22@gmail.com</span>
+        <span>Contato:(54) 99978-5539</span>
+    </footer>
+</body>
+</html>

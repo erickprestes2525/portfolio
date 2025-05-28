@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Variáveis CSS para consistência */
+:root {
+  --preto: #000000;
+  --preto-claro: #1a1a1a;
+  --preto-medio: #141414;
+  --preto-cinza: #2a2a2a;
+  --branco: #ffffff;
+  --cinza-claro: #cccccc;
+  --branco-rosado: rgba(250, 233, 233);
+  --ciano: #00ffff;
+  --ciano-escuro: #006666;
+  --ciano-claro: #00aaaa;
+  --sombra-neon: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--preto);
+  color: var(--branco);
+  line-height: 1.6;
+  position: relative;
+}
+
+#fonte {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Estrutura Principal */
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--preto);
+  z-index: 1000;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Navegação */
+nav {
+  position: sticky;
+  top: 80px;
+  background-color: var(--preto);
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 10px 0;
+}
+
+nav a {
+  color: var(--branco);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: var(--ciano);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Imagem de Fundo */
+.imagem-fundo {
+  background-image: url('forms.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* Conteúdo Principal */
+main {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* Cards */
+.container-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 300px;
+  background-color: var(--preto-claro);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--sombra-neon);
+  transition: all 0.3s ease;
+  min-height: 400px;
+  max-width: 350px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
+}
+
+.card-imagem {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-conteudo {
+  padding: 20px;
+}
+
+.card-titulo {
+  color: var(--ciano);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.card-descricao {
+  color: var(--cinza-claro);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.card-botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--ciano-escuro);
+  color: var(--branco);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.card-botao:hover {
+  background-color: var(--ciano-claro);
+}
+
+/* Formulário */
+.formulario-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--preto-claro);
+  border-radius: 10px;
+  box-shadow: var(--sombra-neon);
+}
+
+.formulario-titulo {
+  color: var(--ciano);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.formulario-grupo {
+  margin-bottom: 25px;
+}
+
+.formulario-grupo label {
+  display: block;
+  color: var(--cinza-claro);
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.formulario-grupo input,
+.formulario-grupo select,
+.formulario-grupo textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--preto-cinza);
+  border: 1px solid var(--ciano-escuro);
+  border-radius: 5px;
+  color: var(--branco);
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.formulario-grupo textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.formulario-grupo input:focus,
+.formulario-grupo select:focus,
+.formulario-grupo textarea:focus {
+  outline: none;
+  border-color: var(--ciano);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.botao-enviar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--ciano-escuro);
+  color: var(--branco);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.botao-enviar:hover {
+  background-color: var(--ciano-claro);
+  transform: translateY(-2px);
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--preto);
+  color: var(--branco);
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+footer span {
+  display: block;
+  margin: 5px 0;
+  color: var(--branco-rosado);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav a {
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .imagem-fundo {
+    background-attachment: scroll;
+    height: 50vh;
+  }
+  
+  .container-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: none;
+  }
+}
