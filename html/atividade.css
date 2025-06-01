@@ -17,7 +17,6 @@ body {
     column-width: auto;
 }
 
-
 header {
     position: sticky;
     top: 0;
@@ -26,6 +25,7 @@ header {
     color: white;
     padding: 20px;
     z-index: 100; 
+}
 
 nav {
     position: sticky;
@@ -55,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ccc; /* Add hover effect */
+    color: #ccc;
 }
 
 .imagem {
@@ -67,6 +67,45 @@ nav a:hover {
 main {
     padding: 20px;
     background-color: #000000;
+}
+
+.cor {
+    color: grey;
+}
+
+.titulo-container {
+   display: flex;
+   justify-content: center; 
+   align-items: center;     
+   height: 200px;          
+   color: white;
+   text-align: center;
+   margin: 20px auto;
+   max-width: 800px;
+   padding: 20px;
+}
+
+.imagem-vertical-container {
+  display: flex;           
+  align-items: center;     
+  gap: 20px;              
+  max-width: 100%;        
+  margin: 40px 0;         
+}
+.imagem-vertical-container {
+  flex-direction: row-reverse;
+}
+
+.imagem-vertical {
+  width: 600px;          
+  height: 600px;           
+  object-fit: cover;      
+  border-radius: 20px; 
+  margin: 50px; 
+}
+
+.texto-ao-lado {
+  flex: 1;               
 }
 
 .sobre {
@@ -107,14 +146,15 @@ p {
     height: auto;
     object-fit: cover;
 }
+
 .container-cards {
     display: flex;
-    justify-content: center; /* centraliza os cards horizontalmente */
-    gap: 30px; /* espaçamento entre os cards */
+    justify-content: center;
+    gap: 30px;
     padding: 40px;
     background-color: #000000;
-    flex-wrap: nowrap; /* impede que os cards quebrem para outra linha */
-    overflow-x: auto; /* permite rolagem horizontal se não couberem */
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 .card {
@@ -251,4 +291,34 @@ footer {
 span {
     padding: 5px;
     color: rgb(250, 233, 233);
+}
+
+/* Estilos para os ícones de redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.instagram:hover {
+    color: #E1306C;
+}
+
+.github:hover {
+    color: #333;
+}
+
+.linkedin:hover {
+    color: #0077B5;
 }
