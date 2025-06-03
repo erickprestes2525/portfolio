@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./atividade.css">
+    <title>Portfolio</title>
+</head>
+<body>
+  <img src="forms.jpeg" alt="minha Imagem" class="imagem">
+   <header>
+       <nav class="menu">
+         <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a target="_blank" href="./sobre.html">Sobre</a></li>
+          <li><a target="_blank" href="./materias.html">Materias</a></li>
+          <li><a target="_blank" href="./formulario.html">Formulário</a></li>
+        </ul>
+       </nav>
+   </header>
+ <main>
+  <div claa="imagem-fundo">
+  <section class="formulario-container">
+    <h2 class="formulario-titulo">Deixe seu Feedback</h2>
+    <form action="#" method="POST">
+        <div class="formulario-grupo">
+            <label for="nome">1. Qual é o seu nome completo?</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="formulario-grupo">
+            <label for="email">2. Qual é o seu e-mail?</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="formulario-grupo">
+            <label for="celular">2. Digite um telefone para contato?</label>
+            <input type="celular" id="tel" name="celular" placeholder="(00) 00000-0000" required>
+        </div>
+        <div class="formulario-grupo">
+            <label for="assunto">3. Qual é o assunto do seu contato?</label>
+            <select id="assunto" name="assunto" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="elogio">Elogio</option>
+            </select>
+        </div>
+        <div class="formulario-grupo">
+            <label for="mensagem">Deixe sua mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+        </div>
+        <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+    </form>
+</section>
+</div>
+ </main>
+    <footer>
+         <div class="social-icons">
+            <a href="https://www.instagram.com/erick_prestes_?igsh=MTZpdHc2Yzc1NGZseQ%3D%3D&utm_source=qr" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/erickprestes2525" target="_blank" class="social-icon github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/erick-prestes-23bb992a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-icon linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <span>Erick Alexandre Prestes rocha</span>
+        <br>
+        <span>E-mail: erickprestes.rocha22@gmail.com</span>
+        <br>
+        <span>Contato:(54) 99978-5539</span>
+    </footer>
+</body>
+</html>
